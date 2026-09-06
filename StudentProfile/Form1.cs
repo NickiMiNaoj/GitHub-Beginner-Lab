@@ -9,7 +9,7 @@ namespace StudentProfile
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Student Profile: Naoj Franzine Roldan");
+            MessageBox.Show("Student Profile — GitHub Beginner Lab");
         }
     }
 }
