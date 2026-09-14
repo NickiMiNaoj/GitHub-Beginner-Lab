@@ -62,8 +62,8 @@ namespace StudentProfile
 				{
 					
 					lblMessage.Text = "Invalid username or password.";
+					MessageBox.Show("Invalid username or password.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-					
 					txtPassword.Clear();
 					txtPassword.Focus(); 
 				}
