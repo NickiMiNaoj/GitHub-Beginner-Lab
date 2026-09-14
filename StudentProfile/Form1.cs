@@ -27,6 +27,7 @@ namespace StudentProfile
             else
             {
                 lblMessage.Text = "Invalid username or password.";
+                MessageBox.Show($"Invalid username or password.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
