@@ -29,33 +29,93 @@
         private void InitializeComponent()
         {
             btnClick = new Button();
-            lbl1 = new Label();
+            lblUsername = new Label();
+            lblPassword = new Label();
+            txtPassword = new TextBox();
+            lblLogin = new Label();
+            txtUsername = new TextBox();
+            lblMessage = new Label();
             SuspendLayout();
             // 
             // btnClick
             // 
-            btnClick.Location = new Point(273, 117);
+            btnClick.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClick.Location = new Point(95, 284);
             btnClick.Name = "btnClick";
-            btnClick.Size = new Size(128, 29);
+            btnClick.Size = new Size(128, 44);
             btnClick.TabIndex = 0;
-            btnClick.Text = "boton klik mu";
+            btnClick.Text = "Log In";
             btnClick.UseVisualStyleBackColor = true;
             btnClick.Click += btnClick_Click;
             // 
-            // lbl1
+            // lblUsername
             // 
-            lbl1.AutoSize = true;
-            lbl1.Location = new Point(312, 80);
-            lbl1.Name = "lbl1";
-            lbl1.Size = new Size(0, 20);
-            lbl1.TabIndex = 1;
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUsername.Location = new Point(23, 72);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(127, 31);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "Username:";
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPassword.Location = new Point(21, 151);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(120, 31);
+            lblPassword.TabIndex = 2;
+            lblPassword.Text = "Password:";
+            // 
+            // txtPassword
+            // 
+            txtPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPassword.Location = new Point(26, 185);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(262, 38);
+            txtPassword.TabIndex = 4;
+            txtPassword.UseSystemPasswordChar = true;
+            // 
+            // lblLogin
+            // 
+            lblLogin.AutoSize = true;
+            lblLogin.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogin.Location = new Point(95, 9);
+            lblLogin.Name = "lblLogin";
+            lblLogin.Size = new Size(118, 41);
+            lblLogin.TabIndex = 5;
+            lblLogin.Text = "LOG IN";
+            // 
+            // txtUsername
+            // 
+            txtUsername.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsername.Location = new Point(26, 106);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(262, 38);
+            txtUsername.TabIndex = 6;
+            // 
+            // lblMessage
+            // 
+            lblMessage.AutoSize = true;
+            lblMessage.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblMessage.ForeColor = Color.Crimson;
+            lblMessage.Location = new Point(26, 248);
+            lblMessage.Name = "lblMessage";
+            lblMessage.Size = new Size(0, 23);
+            lblMessage.TabIndex = 7;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(858, 569);
-            Controls.Add(lbl1);
+            ClientSize = new Size(309, 353);
+            Controls.Add(lblMessage);
+            Controls.Add(txtUsername);
+            Controls.Add(lblLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
             Controls.Add(btnClick);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
@@ -68,6 +128,12 @@
         #endregion
 
         private Button btnClick;
-        private Label lbl1;
+        private Label lblUsername;
+        private Label lblPassword;
+        private TextBox textBox1;
+        private TextBox txtPassword;
+        private Label lblLogin;
+        private TextBox txtUsername;
+        private Label lblMessage;
     }
 }

@@ -13,8 +13,22 @@ namespace StudentProfile
 
         private void btnClick_Click(object sender, EventArgs e)
         {
-            lbl1.Text = "Contact number: 09051461397";
-            MessageBox.Show("Student Profile — GitHub Beginner Lab");
+            string validUsername = "registrar1";
+            string validPassword = "Password123!";
+
+            string enteredUsername = txtUsername.Text.Trim();
+            string enteredPassword = txtPassword.Text;
+
+            if (enteredUsername == validUsername && enteredPassword == validPassword)
+            {
+                lblMessage.Text = "";
+                MessageBox.Show($"Login successful! Welcome, {enteredUsername}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                lblMessage.Text = "Invalid username or password.";
+                MessageBox.Show($"Invalid username or password.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
